@@ -10,15 +10,12 @@ const gifStages = [
 ]
 
 const noMessages = [
-    "Hmm..Your Gilheri wants you to wait 😜",
     "Are you sure you want to wait? 👀",
     "But I planned something special 🥺",
-    "Come on… just click it 😌",
     "Don’t you wanna see your surprise? 🎁",
     "I promise it’s worth it 🫶",
-    "Okay last chance! 😭",
     "You really gonna do this to me? 😳",
-    "You can't escape your birthday 😈"
+    "Okay last chance! 😭",
 ]
 const yesTeasePokes = [
     "Hmm… your gilheri says wait 😜",
