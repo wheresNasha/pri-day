@@ -240,6 +240,15 @@ h1 {
     from { transform: translateY(0) rotate(-1deg); }
     to { transform: translateY(-12px) rotate(1deg); }
 }
+.letter {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.fade-line {
+    max-width: 500px;
+    margin: 12px auto;
+}
 
 .yes-message {
     font-size: 1.4rem;
