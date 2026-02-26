@@ -13,22 +13,22 @@ const noMessages = [
     "Don’t you wanna see your surprise? 🎁",
     "Are you sure you want to wait? 👀",
     "But I planned something special 🥺",
+    "If you say wait, I will be really sad...",
     "I promise it’s worth it 🫶",
+    "Habibi please... 🥺",
     "You really gonna do this to me? 😳",
-    "LAST CHANCE 😭"
+    "LAST CHANCE 😭",
+    "You can't catch me anyway 😜"
 ]
 const yesTeasePokes = [
     "Hmm… your gilheri says wait 😜",
     "Not so fasttt 👀",
     "Patience looks cute on you 😌",
-    "What if you just… waited a bit 😏",
     "You’re kinda enjoying this, aren’t you? 👀",
     "Good things take time… maybe 😌",
     "Try resisting me… just once 😜",
     "Almost there… or maybe not 😏",
     "Hehe… I love this side of you 😈",
-    "Stay… just a little longer 🫶",
-    "Trust me, it gets better 😌"
 ];
 
 let yesTeasedCount = 0
