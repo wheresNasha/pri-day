@@ -24,6 +24,53 @@
 
 <button id="music-toggle" onclick="toggleMusic()" title="Toggle music">🔊</button>
 <script>
+    <script>
+function nextPage() {
+    window.location.href = "yes.html";
+}
+
+// 🎵 MUSIC CONTINUITY
+const music = document.getElementById('bg-music')
+
+// Try to resume from previous page
+const wasPlaying = localStorage.getItem('musicPlaying') === 'true'
+
+if (wasPlaying) {
+    const savedTime = localStorage.getItem('musicTime')
+    if (savedTime) {
+        music.currentTime = savedTime
+    }
+
+    music.volume = 0.3
+    music.play().catch(() => {
+        // fallback: play on user interaction
+        document.addEventListener('click', () => {
+            music.play().catch(() => {})
+        }, { once: true })
+    })
+}
+
+// Save progress continuously
+setInterval(() => {
+    if (!music.paused) {
+        localStorage.setItem('musicPlaying', 'true')
+        localStorage.setItem('musicTime', music.currentTime)
+    }
+}, 500)
+
+// Toggle button
+function toggleMusic() {
+    if (music.paused) {
+        music.play()
+        localStorage.setItem('musicPlaying', 'true')
+        document.getElementById('music-toggle').textContent = '🔊'
+    } else {
+        music.pause()
+        localStorage.setItem('musicPlaying', 'false')
+        document.getElementById('music-toggle').textContent = '🔇'
+    }
+}
+    
 function nextPage() {
     window.location.href = "yes.html";
 }
