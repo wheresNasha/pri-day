@@ -14,8 +14,8 @@ const noMessages = [
     "But I planned something special 🥺",
     "I promise it’s worth it 🫶",
     "You really gonna do this to me? 😳",
-    // "Don’t you wanna see your surprise? 🎁",
     "LAST CHANCE 😭",
+    "Don’t you wanna see your surprise? 🎁"
 ]
 const yesTeasePokes = [
     "Hmm… your gilheri says wait 😜",
