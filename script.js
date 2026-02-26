@@ -122,13 +122,6 @@ function handleNoClick() {
         runawayEnabled = true
     }, 600)
 }
-if (noClickCount === noMessages.length - 1) {
-    noBtn.textContent = "Too late 😈"
-} else {
-    setTimeout(() => {
-        noBtn.textContent = "No 🙈"
-    }, 2500)
-}
 }
 
 function swapGif(src) {
