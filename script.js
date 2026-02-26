@@ -10,20 +10,29 @@ const gifStages = [
 ]
 
 const noMessages = [
-    "Your Gilheri wants you to wait 😜",
+    "Hmm..Your Gilheri wants you to wait 😜",
     "Are you sure you want to wait? 👀",
     "But I planned something special 🥺",
+    "Come on… just click it 😌",
     "Don’t you wanna see your surprise? 🎁",
-    "You’re making me nervous 😭",
+    "I promise it’s worth it 🫶",
     "Okay last chance! 😭",
+    "You really gonna do this to me? 😳",
     "You can't escape your birthday 😈"
 ]
-
 const yesTeasePokes = [
-    "hmm.. try waiting first... I bet you want to know what happens 😏",
-    "aren’t you curious what happens if you wait 👀",
-    "go on… just try it 😈"
-]
+    "Hmm… your gilheri says wait 😜",
+    "Not so fasttt 👀",
+    "Patience looks cute on you 😌",
+    "What if you just… waited a bit 😏",
+    "You’re kinda enjoying this, aren’t you? 👀",
+    "Good things take time… maybe 😌",
+    "Try resisting me… just once 😜",
+    "Almost there… or maybe not 😏",
+    "Hehe… I love this side of you 😈",
+    "Stay… just a little longer 🫶",
+    "Trust me, it gets better 😌"
+];
 
 let yesTeasedCount = 0
 
@@ -89,7 +98,9 @@ function handleNoClick() {
 
     // Grow the Yes button bigger each time
     const currentSize = parseFloat(window.getComputedStyle(yesBtn).fontSize)
-    yesBtn.style.fontSize = `${currentSize * 1.35}px`
+    yesBtn.style.fontSize = `${Math.min(currentSize * 1.35, 60)}px`
+    // const currentSize = parseFloat(window.getComputedStyle(yesBtn).fontSize)
+    // yesBtn.style.fontSize = `${currentSize * 1.35}px`
     const padY = Math.min(18 + noClickCount * 5, 60)
     const padX = Math.min(45 + noClickCount * 10, 120)
     yesBtn.style.padding = `${padY}px ${padX}px`
@@ -105,10 +116,19 @@ function handleNoClick() {
     swapGif(gifStages[gifIndex])
 
     // Runaway starts at click 5
-    if (noClickCount >= 5 && !runawayEnabled) {
+   if (noClickCount >= 5 && !runawayEnabled) {
+    setTimeout(() => {
         enableRunaway()
         runawayEnabled = true
-    }
+    }, 600)
+}
+if (noClickCount === noMessages.length - 1) {
+    noBtn.textContent = "Too late 😈"
+} else {
+    setTimeout(() => {
+        noBtn.textContent = "No 🙈"
+    }, 2500)
+}
 }
 
 function swapGif(src) {
