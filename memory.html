@@ -5,11 +5,6 @@
     <title>Memories 💭</title>
     <link rel="stylesheet" href="style.css">
 </head>
-window.addEventListener('load', () => {
-    const music = document.getElementById('bg-music')
-    music.volume = 0.3
-    music.play().catch(() => {})
-})
 <body>
 
 <div class="container">
@@ -23,6 +18,11 @@ window.addEventListener('load', () => {
     <button onclick="nextPage()">Continue ➡️</button>
 </div>
 
+<audio id="bg-music" loop>
+    <source src="music/beabadoobee - Glue Song (Lyrics).mp3" type="audio/mpeg">
+</audio>
+
+<button id="music-toggle" onclick="toggleMusic()" title="Toggle music">🔊</button>
 <script>
 function nextPage() {
     window.location.href = "yes.html";
