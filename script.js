@@ -8,14 +8,14 @@ const gifStages = [
     "https://media.tenor.com/5_tv1HquZlcAAAAj/chiikawa.gif",               // 6 very devastated
     "https://media1.tenor.com/m/uDugCXK4vI4AAAAC/chiikawa-hachiware.gif"  // 7 crying runaway
 ]
-
+ // "I promise it’s worth it 🫶",
+// "Don’t you wanna see your surprise? 🎁",
+// 
 const noMessages = [
-    "Don’t you wanna see your surprise? 🎁",
     "Are you sure you want to wait? 👀",
-    "But I planned something special 🥺",
     "If you say wait, I will be really sad...",
-    "I promise it’s worth it 🫶",
     "Habibi please... 🥺",
+    "But I planned something special 🥺",
     "You really gonna do this to me? 😳",
     "LAST CHANCE 😭",
     "You can't catch me anyway 😜"
@@ -23,12 +23,12 @@ const noMessages = [
 const yesTeasePokes = [
     "Hmm… your gilheri says wait 😜",
     "Not so fasttt 👀",
-    "Patience looks cute on you 😌",
-    "You’re kinda enjoying this, aren’t you? 👀",
+    // "Patience looks cute on you 😌",
+    // "You’re kinda enjoying this, aren’t you? 👀",
     "Good things take time… maybe 😌",
     "Try resisting me… just once 😜",
     "Almost there… or maybe not 😏",
-    "Hehe… I love this side of you 😈",
+    // "Hehe… I love this side of you 😈",
 ];
 
 let yesTeasedCount = 0
